@@ -30,8 +30,8 @@ ENV AUTH_PASSWORD_FILE="/run/secrets/auth_password"
 
 # Use a custom UID/GID instead of the default system UID which has a greater possibility
 # for collisions with the host and other containers.
-ENV TINYPROXY_UID="57981"
-ENV TINYPROXY_GID="57981"
+ENV TINYPROXY_UID="2000"
+ENV TINYPROXY_GID="996"
 
 # Curl is for healthchecks.
 RUN apk add --no-cache tinyproxy curl
